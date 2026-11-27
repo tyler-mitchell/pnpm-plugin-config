@@ -1,6 +1,6 @@
 {
   "name": "@hyphened/pnpm-plugin-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared pnpm patches for hyphened projects, applied as a pnpm config dependency plugin.",
   "license": "MIT",
   "repository": {
