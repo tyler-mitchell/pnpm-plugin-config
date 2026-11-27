@@ -1,0 +1,33 @@
+{
+  "name": "@hyphened/pnpm-plugin-config",
+  "version": "0.0.0",
+  "description": "Shared pnpm patches for hyphened projects, applied as a pnpm config dependency plugin.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-mitchell/pnpm-plugin-config.git",
+    "directory": "packages/pnpm-plugin-config"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "pnpmfile.mjs",
+    "patches"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./pnpmfile.mjs": "./pnpmfile.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepack": "pnpm run check",
+    "check": "node --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
